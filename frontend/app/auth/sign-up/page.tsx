@@ -16,12 +16,15 @@ export default function AuthPage() {
 
   const router = useRouter();
 
+  const baseURL =
+    process.env.NEXT_PUBLIC_API_BASE_URL || "https://trend-genie.onrender.com";
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     // Handle authentication logic here
     const url = isLogin
-      ? "http://localhost:5000/api/v1/auth/sign-in"
-      : "http://localhost:5000/api/v1/auth/sign-up";
+      ? `${baseURL}/api/v1/auth/sign-in`
+      : `${baseURL}/api/v1/auth/sign-up`;
 
     const payload = {
       email,
