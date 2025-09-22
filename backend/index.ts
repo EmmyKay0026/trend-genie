@@ -7,7 +7,7 @@ import videoUploadRoutes from "./src/routes/videoUploadRoutes";
 import authRoutes from "./src/routes/authRoute";
 import geminiAiRoutes from "./src/routes/geminiAiRoutes";
 import youtubeVideoRepurposingRoute from "./src/routes/youtubeVideoRepurposingRoute";
-const uploadRoute = require("./upload");
+// const uploadRoute = require("./upload");
 
 dotenv.config();
 
