@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const repurposeWithGemini_1 = require("../controllers/repurposeWithGemini");
+const multer_1 = require("../middleware/multer");
+const router = (0, express_1.Router)();
+router.get("/repurpose-with-gemini", repurposeWithGemini_1.repurposeUploadedVideo);
+router.post("/upload", multer_1.upload.array("videos", 5), repurposeWithGemini_1.repurposeUploadedVideo);
+// router.post("/v2/repurpose-with-gemini", repurposeVideoLinkWithGemini);
+exports.default = router;
