@@ -1,0 +1,89 @@
+#Backend folder structure
+/src
+│
+├── controllers/         ← Request handlers (logic layer)
+│   ├── video.controller.ts
+│   ├── ai.controller.ts
+│   └── schedule.controller.ts
+│
+├── routes/              ← Route definitions
+│   ├── video.routes.ts
+│   ├── ai.routes.ts
+│   └── schedule.routes.ts
+│
+├── services/            ← External API logic (OpenAI, Whisper, Buffer)
+│   ├── openai.service.ts
+│   ├── whisper.service.ts
+│   └── scheduler.service.ts
+│
+├── utils/               ← Helper functions (formatting, file ops)
+│   ├── ffmpeg.ts
+│   ├── textHelpers.ts
+│   └── constants.ts
+│
+├── middlewares/         ← Auth, error handling, logging
+│   ├── auth.middleware.ts
+│   └── errorHandler.ts
+│
+├── models/              ← DB models (if using ORM like Prisma or Sequelize)
+│   ├── user.model.ts
+│   ├── video.model.ts
+│   └── repurpose.model.ts
+│
+├── config/              ← App config, keys, db, CORS
+│   ├── db.ts
+│   └── env.ts
+│
+├── index.ts             ← Main server entry point
+└── app.ts               ← Express app setup
+
+
+
+#Frontend folder structure
+/app
+│
+├── (auth)/
+│   ├── login/
+│   └── register/
+│
+├── dashboard/
+│   ├── upload/
+│   ├── repurpose/
+│   ├── preview/
+│   ├── export/
+│   └── schedule/
+│
+├── layout.tsx
+├── page.tsx  ← Home (Landing)
+│
+/components
+│
+├── ui/             ← Reusable UI components (buttons, inputs)
+├── video/          ← Video player, uploader
+├── content/        ← Generated captions, previews
+├── layout/         ← Navbar, Sidebar, Footer
+└── icons/          ← SVG or React icons
+
+/lib
+├── api.ts          ← API call helpers
+├── utils.ts        ← Formatters, text/video helpers
+└── prompts.ts      ← Prompt templates for AI
+
+/types
+└── index.ts        ← TypeScript interfaces (Video, User, Content, etc.)
+
+/hooks
+└── useUpload.ts    ← Custom hooks for video uploading, status
+
+/public
+└── assets/         ← Logos, placeholder images, etc.
+
+/styles
+└── globals.css     ← Tailwind base styles
+
+/env
+└── .env.local      ← API keys, environment config
+
+
+
+
