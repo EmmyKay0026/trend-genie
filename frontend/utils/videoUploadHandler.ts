@@ -3,7 +3,8 @@ import axios from "axios";
 import { api } from "./axiosConfig";
 import { getSupabaseClientWithToken, supabase } from "./supabaseClientConfig";
 
-const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
+const baseURL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "https://trend-genie.onrender.com";
 
 // console.log(user?.id);
 export const uploadVideo = async (file: File) => {
