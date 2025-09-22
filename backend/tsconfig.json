@@ -8,8 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "rootDir": ".",
-    "moduleResolution": "node",
-    "types": ["node"]
+    "moduleResolution": "node"
   },
   "include": ["index.ts", "src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
