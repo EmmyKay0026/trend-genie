@@ -31,7 +31,8 @@
     "node-fetch": "^3.3.2",
     "uuid": "^11.1.0",
     "xml2js": "^0.6.2",
-    "youtube-transcript": "^1.2.1"
+    "youtube-transcript": "^1.2.1",
+    "@types/node": "^22.18.6"
   },
   "devDependencies": {
     "@types/axios": "^0.14.4",

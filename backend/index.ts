@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 
@@ -25,7 +25,7 @@ app.use("/api/v1/video", videoUploadRoutes);
 // app.use("/api/v1/video-repurpose", geminiAiRoutes);
 app.use("/api/v1/repurpose-youtube", youtubeVideoRepurposingRoute);
 
-app.get("/", (_req, res) => {
+app.get("/", (_req: Request, res: Response) => {
   res.send("Backend is working!");
 });
 

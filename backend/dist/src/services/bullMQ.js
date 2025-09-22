@@ -1,6 +1,5 @@
 "use strict";
 // import { Queue, Worker, Job } from "bullmq";
-Object.defineProperty(exports, "__esModule", { value: true });
 // // Define a job queue
 // const videoQueue = new Queue("video-repurpose");
 // // Define a worker to process the job

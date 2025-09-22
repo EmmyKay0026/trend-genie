@@ -7,9 +7,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
+    "rootDir": ".",
     "moduleResolution": "node",
     "types": ["node"]
   },
-  "include": ["src"],
+  "include": ["index.ts", "src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
